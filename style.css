@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+  }
+
+  @font-face {
+    font-family: myFont;
+    src: url(Ubuntu-Regular.ttf);
+  }
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightgray;
+    font-family: myFont;
+}
+
+.left {
+    background-image: url(madiba-de-african-inspiration-aXe4Ufe3IV4-unsplash.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right {
+    background-color: white;
+}
+
+.intro {
+    max-width: 500px;
+    padding: 16px;
+    text-align: center;
+}
+
+.intro h1 {
+    padding: 8px;
+}
+
+.intro p {
+    line-height: 1.5em;
+}
+
+.form h1 {
+    text-align: center;
+    padding: 16px;
+}
+.formrow {
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.25rem;
+}
+
+img {
+    width: 150px;
+    height: 75px;
+    margin-top: 8px;
+    
+}
+
+.credit {
+    font-style: italic;
+    padding: 8px;
+    margin-bottom: 2px;
+    color: white;
+}
+
+.bottom {
+    padding: 16px;
+    
+}
+
+button {
+    padding: 8px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+button:hover, input:hover {
+    background-color: rgb(210, 235, 250);
+
+}
+.bottom p {
+    margin: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(97, 195, 255);
+}
+
+a:hover {
+    color: rgb(210, 235, 250);
+}
+
+label, input {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    width: 200px;
+}
