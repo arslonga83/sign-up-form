@@ -8,24 +8,24 @@ button.addEventListener('click', () => {
         return;
     }
     else {
-        alert('Please make sure passwords match');
+        alert('Please make sure passwords match'); //points out problem as page reloads
     }
 })
 
 pwd2.addEventListener('input', () => {
     if (pwd1.value == pwd2.value) {
-        pwd2.style.borderColor = "green"
+        pwd2.style.borderColor = "green" 
         verify.textContent = "";
     }
     else {
-        pwd2.style.borderColor = "red";
+        pwd2.style.borderColor = "red"; //adds visual cue if no match
         verify.textContent = "Passwords do not match";
     }
 })
 
-pwd1.addEventListener('input', () => {
+pwd1.addEventListener('input', () => { //checks each pwd field separately
     if (pwd1.value == pwd2.value) {
-        pwd2.style.borderColor = "green"
+        pwd2.style.borderColor = "green" 
         verify.textContent = "";
     }
     else {
