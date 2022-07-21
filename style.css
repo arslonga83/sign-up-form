@@ -88,7 +88,12 @@ button {
 
 button:hover, input:hover {
     background-color: rgb(210, 235, 250);
+}
 
+input:focus, button:focus {
+    outline: none;
+    box-shadow: 1px 1px rgb(97, 195, 255);
+   
 }
 .bottom p {
     margin: 16px;
@@ -109,4 +114,9 @@ label, input {
     flex-direction: column;
     padding: 2px;
     width: 200px;
+}
+
+.logo {
+    background-color: lightgray;
+    opacity: .7;
 }
