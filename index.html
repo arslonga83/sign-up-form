@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="./script.js" type="text/javascript" defer></script>
     <title>Odin Sign-Up Form</title>
 </head>
 <body>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="tel">
                         <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="222-333-4444" required>
+                        <input type="tel" id="phone" name="phone" maxlength="12" minlength="7" placeholder="222-333-4444" required>
                     </div>
                 </div>
                 <div class="formrow">
@@ -54,6 +54,7 @@
                     <div class="pwd2">
                         <label for="pwd2">Confirm Password:</label>
                         <input type="password" id="pwd2" name="pwd2" placeholder="thesamecode" required>
+                        <p id="pwd-verify"></p>
                     </div>
                 </div>
         </div>
