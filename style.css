@@ -29,7 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 650px;
+    min-height: 650px; /*set minimum so background will extend further if needed for scrolling on small screen*/
 }
 
 .right {
@@ -93,7 +93,7 @@ button:hover, input:hover {
 }
 
 input:focus, button:focus {
-    outline: none;
+    outline: none; /*remove defaults*/
     box-shadow: 1px 1px rgb(97, 195, 255);
    
 }
@@ -102,7 +102,7 @@ input:focus, button:focus {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /*remove defaults*/
     font-weight: bolder;
     color: rgb(97, 195, 255);
 }
@@ -126,5 +126,5 @@ label, input {
 #pwd-verify {
     font-size: .7rem;
     color: red;
-    position: absolute;
+    position: absolute; /* this makes it so the new text doesn't push boxes around when it appears*/
 }
